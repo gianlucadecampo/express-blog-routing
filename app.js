@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 //import routing file and rules
-const postsRouter = Require('./routers/posts')
+const postsRouter = require('./routers/posts')
 
 //routing
 app.get('/', (req, res) => {
