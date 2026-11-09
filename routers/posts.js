@@ -2,6 +2,12 @@ const express = require('express')
 const router = express.Router()
 
 //routing
+
+//prova error handler
+router.get('/test-error', (req, res) => {
+    throw new Error('Questo è un errore di test!')
+})
+
 router.get('/', (req, res) => {
     res.send('you request GET (index)')
 })
